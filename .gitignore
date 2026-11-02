@@ -1,0 +1,20 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python caches and build output (the editable install writes *.egg-info into src/)
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test and notebook caches
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store

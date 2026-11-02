@@ -1,0 +1,13 @@
+# Exact versions used to produce the committed notebook and figures (Python 3.12).
+matplotlib==3.11.2
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+pytest==9.2.0
+
+# Only needed to re-run analysis.ipynb
+ipykernel==7.4.0
+nbconvert==7.17.2
+
+# This repository's own code in src/, installed so the tests, script and notebook can import it
+-e .

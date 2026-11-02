@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]  # 77 is the first to read the plain-text licence field
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ircc-processing-times"
+version = "0.1.0"
+description = "Analysis of one snapshot of IRCC's processing-times feed for permanent residence and citizenship"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Manoj Kumar" }]
+requires-python = ">=3.12"
+# Loose here on purpose: requirements.txt pins the exact versions used for the results.
+dependencies = ["matplotlib", "numpy", "pandas", "scipy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
